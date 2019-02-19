@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MRRadioButton : UIButton{
+open class MRRadioButton : UIButton{
 
     /// Main color to use while filling in background
     @IBInspectable var backgroundFillColor : UIColor = UIColor.black{
@@ -40,7 +40,7 @@ class MRRadioButton : UIButton{
     private var minimumTransform = CGAffineTransform(scaleX: 0.01, y: 0.01)
     private var maximumTransform = CGAffineTransform(scaleX: 3.0, y: 3.0)
 
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
 
         super.awakeFromNib()
 
@@ -51,7 +51,7 @@ class MRRadioButton : UIButton{
         layer.borderWidth = borderWidth
     }
 
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
 
         super.layoutSubviews()
         selectionView.layer.cornerRadius = selectionView.bounds.width/2.0
