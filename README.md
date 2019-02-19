@@ -11,6 +11,8 @@ To install it via cocoapods, add the following to your podfile
 `pod 'MRRadioButton'`
 
 ## Usage:
+Please note that right now this is only for a circular radio button
+
 ### Programmatically instantiation:
 `let button = MRRadioButton(frame: CGRect(x: 0.0, y: 0.0, width : 30.0, height : 30.0))`
 ### To use it via storyboard, subclass your `UIButton`.
