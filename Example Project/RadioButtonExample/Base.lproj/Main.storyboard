@@ -25,7 +25,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhP-gS-OUp" customClass="MRRadioButton" customModule="RadioButtonExample" customModuleProvider="target">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhP-gS-OUp" customClass="MRRadioButton" customModule="MRRadioButton">
                                             <rect key="frame" x="167.5" y="17.5" width="40" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="YoY-H2-hNF"/>
@@ -50,7 +50,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="67.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTI-J8-Lap" customClass="MRRadioButton" customModule="RadioButtonExample" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTI-J8-Lap" customClass="MRRadioButton" customModule="MRRadioButton">
                                                     <rect key="frame" x="15" y="10" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="sTI-J8-Lap" secondAttribute="height" multiplier="1:1" id="6BX-Zx-jkD"/>
@@ -88,7 +88,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="mainTableView" destination="fhP-gS-OUp" id="pdz-QU-mgD"/>
+                        <outlet property="mainTableView" destination="Nmd-k6-pcn" id="dyE-90-cXQ"/>
                         <outlet property="radioButton" destination="fhP-gS-OUp" id="slG-oF-fbt"/>
                     </connections>
                 </viewController>

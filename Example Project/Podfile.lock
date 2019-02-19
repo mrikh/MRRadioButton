@@ -1,5 +1,5 @@
 PODS:
-  - MRRadioButton (0.0.1)
+  - MRRadioButton (0.0.2)
 
 DEPENDENCIES:
   - MRRadioButton (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MRRadioButton: 6fe4fc9224fb5df051b416ed62198a1ea3f93542
+  MRRadioButton: 6fbad05cfa323025bc88536a95cbe33c4fc056b5
 
 PODFILE CHECKSUM: 97db57e77a6e5511c011c2f9f16a7b3bad009419
 

@@ -10,6 +10,9 @@ import UIKit
 
 open class MRRadioButton : UIButton{
 
+    /// read only property for current state
+    private (set) open var currentlySelected : Bool = false
+
     /// Main color to use while filling in background
     @IBInspectable var backgroundFillColor : UIColor = UIColor.black{
         didSet{
@@ -43,12 +46,19 @@ open class MRRadioButton : UIButton{
     override open func awakeFromNib() {
 
         super.awakeFromNib()
+        customInitialization()
+    }
 
-        setupView(selectionView)
-        setupView(fadingView)
+    public override init(frame: CGRect) {
 
-        layer.borderColor = borderColor.cgColor
-        layer.borderWidth = borderWidth
+        super.init(frame: frame)
+        customInitialization()
+    }
+
+    required public init?(coder aDecoder: NSCoder) {
+
+        super.init(coder: aDecoder)
+        customInitialization()
     }
 
     override open func layoutSubviews() {
@@ -61,10 +71,23 @@ open class MRRadioButton : UIButton{
 
     open func updateSelection(select : Bool, animated : Bool = false){
 
-        select == true ? startSelection(animated : animated) : clearSelection(animated : animated)
+        //dont update
+        if currentlySelected == select {return}
+
+        currentlySelected = select
+        currentlySelected ? startSelection(animated : animated) : clearSelection(animated : animated)
     }
 
     //MARK:- Private
+    private func customInitialization(){
+
+        setupView(selectionView)
+        setupView(fadingView)
+
+        layer.borderColor = borderColor.cgColor
+        layer.borderWidth = borderWidth
+    }
+
     private func setupView(_ view : UIView){
 
         addSubview(view)

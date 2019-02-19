@@ -11,7 +11,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var mainTableView: MRRadioButton!
+    @IBOutlet weak var mainTableView: UITableView!
     @IBOutlet weak var radioButton: MRRadioButton!
 
     private var selectedIndexes = [Int]()
@@ -19,9 +19,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        let button = MRRadioButton(frame: CGRect(x: 0.0, y: 0.0, width : 30.0, height : 30.0))
+        button.addTarget(self, action: #selector(handleTouchUpInside(_:)), for: .touchUpInside)
+        mainTableView.tableHeaderView?.addSubview(button)
     }
 
     @IBAction func mainRadioAction(_ sender: MRRadioButton) {
+
+        sender.updateSelection(select: true, animated: true)
+    }
+
+    @objc private func handleTouchUpInside(_ sender : MRRadioButton){
 
         sender.updateSelection(select: true, animated: true)
     }

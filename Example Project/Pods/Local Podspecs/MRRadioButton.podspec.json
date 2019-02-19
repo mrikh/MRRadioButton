@@ -1,23 +1,24 @@
 {
   "name": "MRRadioButton",
-  "version": "0.0.1",
-  "summary": "A customisable radio button for iOS",
-  "homepage": "https://github.com/mrikh/MRRadioButton",
   "platforms": {
     "ios": "10.0"
   },
+  "summary": "Customizable radio button in swift",
+  "requires_arc": true,
+  "version": "0.0.2",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "YOURNAME": "Mayank Rikh"
+    "Mayank Rikh": "mayankrikh@gmail.com"
   },
+  "homepage": "https://github.com/mrikh/MRRadioButton",
   "source": {
     "git": "https://github.com/mrikh/MRRadioButton.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "frameworks": "UIKit",
-  "source_files": "Classes/*",
-  "requires_arc": true
+  "source_files": "Classes/*.{swift}",
+  "swift_version": "4.2"
 }
