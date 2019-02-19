@@ -30,4 +30,6 @@ You can fetch the current status of the button via the read-only property `curre
 `borderColor` - Border color of the `UIButton`
 `borderWidth` - Border width of the `UIButton`
 
+
+
 ![alt tag](https://media.giphy.com/media/1msHh02cw6fiUPwOtb/giphy.gif)
