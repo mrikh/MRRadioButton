@@ -5,6 +5,7 @@ s.summary           = 'A customisable radio button for iOS'
 s.homepage          = 'https://github.com/mrikh/MRRadioButton'
 s.ios.deployment_target = '10.0'
 s.platform = :ios, '10.0'
+s.swift_version = '4.2'
 s.license           = {
 :type => 'MIT',
 :file => 'LICENSE'
