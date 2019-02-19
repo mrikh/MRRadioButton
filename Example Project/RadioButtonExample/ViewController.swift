@@ -27,12 +27,12 @@ class ViewController: UIViewController {
 
     @IBAction func mainRadioAction(_ sender: MRRadioButton) {
 
-        sender.updateSelection(select: true, animated: true)
+        sender.updateSelection(select: !sender.currentlySelected, animated: true)
     }
 
     @objc private func handleTouchUpInside(_ sender : MRRadioButton){
 
-        sender.updateSelection(select: true, animated: true)
+        sender.updateSelection(select: !sender.currentlySelected, animated: true)
     }
 }
 
@@ -50,7 +50,11 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
         cell.radioButton.updateSelection(select: selectedIndexes.contains(indexPath.row))
 
         cell.radioClick = { [weak self] in
-            self?.selectedIndexes.append(indexPath.row)
+            if let position = self?.selectedIndexes.index(where : {$0 == indexPath.row}){
+                self?.selectedIndexes.remove(at: position)
+            }else{
+                self?.selectedIndexes.append(indexPath.row)
+            }
         }
 
         return cell
@@ -64,7 +68,7 @@ class RadioCell : UITableViewCell{
 
     @IBAction func radioAction(_ sender: MRRadioButton) {
 
-        sender.updateSelection(select: true, animated: true)
+        radioButton.updateSelection(select: !sender.currentlySelected, animated: true)
         radioClick?()
     }
 }
