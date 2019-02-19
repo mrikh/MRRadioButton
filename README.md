@@ -26,9 +26,11 @@ Just call the following method whenever you want to update the button state
 You can fetch the current status of the button via the read-only property `currentlySelected`
 
 ### Customization:
-`backgroundFillColor` - This will be the background color to fill the button with
-`borderColor` - Border color of the `UIButton`
-`borderWidth` - Border width of the `UIButton`
+```
+backgroundFillColor - This will be the background color to fill the button with
+borderColor - Border color of the `UIButton
+borderWidth - Border width of the `UIButton
+```
 
 
 
