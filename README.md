@@ -28,8 +28,8 @@ You can fetch the current status of the button via the read-only property `curre
 ### Customization:
 ```
 backgroundFillColor - This will be the background color to fill the button with
-borderColor - Border color of the `UIButton
-borderWidth - Border width of the `UIButton
+borderColor - Border color of the UIButton
+borderWidth - Border width of the UIButton
 ```
 
 
