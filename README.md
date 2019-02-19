@@ -14,13 +14,16 @@ To install it via cocoapods, add the following to your podfile
 Please note that right now this is only for a circular radio button
 
 ### Programmatically instantiation:
-`let button = MRRadioButton(frame: CGRect(x: 0.0, y: 0.0, width : 30.0, height : 30.0))`
+```
+let button = MRRadioButton(frame: CGRect(x: 0.0, y: 0.0, width : 30.0, height : 30.0))
+```
 ### To use it via storyboard, subclass your `UIButton`.
 
 ### Updataing button status
 Just call the following method whenever you want to update the button state
-
-`button.updateSelection(select: true, animated: true)`
+```
+button.updateSelection(select: true, animated: true)
+```
 
 ### Current Status:
 You can fetch the current status of the button via the read-only property `currentlySelected`
