@@ -1,8 +1,8 @@
 //
 //  MRRadioButton.swift
-//  LaundryHub-Driver
+//  RadioButtonExample
 //
-//  Created by Mayank Rikh on 04/02/19.
+//  Created by Mayank Rikh on 19/02/19.
 //  Copyright © 2019 Mayank Rikh. All rights reserved.
 //
 
@@ -59,7 +59,7 @@ open class MRRadioButton : UIButton{
         layer.cornerRadius = layer.bounds.width/2.0
     }
 
-    func updateSelection(select : Bool, animated : Bool = false){
+    open func updateSelection(select : Bool, animated : Bool = false){
 
         select == true ? startSelection(animated : animated) : clearSelection(animated : animated)
     }

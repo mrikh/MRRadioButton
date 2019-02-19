@@ -1,0 +1,16 @@
+PODS:
+  - MRRadioButton (0.0.1)
+
+DEPENDENCIES:
+  - MRRadioButton (from `../`)
+
+EXTERNAL SOURCES:
+  MRRadioButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MRRadioButton: 6fe4fc9224fb5df051b416ed62198a1ea3f93542
+
+PODFILE CHECKSUM: 97db57e77a6e5511c011c2f9f16a7b3bad009419
+
+COCOAPODS: 1.5.3

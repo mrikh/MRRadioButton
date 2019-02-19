@@ -12,10 +12,11 @@
 		464AD639221BBE2F00274CBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464AD637221BBE2F00274CBA /* Main.storyboard */; };
 		464AD63B221BBE3500274CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464AD63A221BBE3500274CBA /* Assets.xcassets */; };
 		464AD63E221BBE3500274CBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464AD63C221BBE3500274CBA /* LaunchScreen.storyboard */; };
-		464AD647221BBF4A00274CBA /* MRRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464AD646221BBF4A00274CBA /* MRRadioButton.swift */; };
+		575B929BACCCFBC4576A4D54 /* Pods_RadioButtonExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFDA2F72EBCF5A2BD4B107E /* Pods_RadioButtonExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12B88616B2429711903F4EAA /* Pods-RadioButtonExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioButtonExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadioButtonExample/Pods-RadioButtonExample.debug.xcconfig"; sourceTree = "<group>"; };
 		464AD630221BBE2E00274CBA /* RadioButtonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioButtonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		464AD633221BBE2E00274CBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		464AD635221BBE2E00274CBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +24,8 @@
 		464AD63A221BBE3500274CBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		464AD63D221BBE3500274CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		464AD63F221BBE3500274CBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		464AD646221BBF4A00274CBA /* MRRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRRadioButton.swift; sourceTree = "<group>"; };
+		9029D2E746F844F7D5B8659D /* Pods-RadioButtonExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadioButtonExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadioButtonExample/Pods-RadioButtonExample.release.xcconfig"; sourceTree = "<group>"; };
+		BFFDA2F72EBCF5A2BD4B107E /* Pods_RadioButtonExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadioButtonExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575B929BACCCFBC4576A4D54 /* Pods_RadioButtonExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,8 @@
 			children = (
 				464AD632221BBE2E00274CBA /* RadioButtonExample */,
 				464AD631221BBE2E00274CBA /* Products */,
+				532FF8C1123FA5EFCC51B682 /* Pods */,
+				DD25B05009D03B2BDC43A9D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +61,6 @@
 		464AD632221BBE2E00274CBA /* RadioButtonExample */ = {
 			isa = PBXGroup;
 			children = (
-				464AD645221BBF4200274CBA /* MRRadioButton */,
 				464AD633221BBE2E00274CBA /* AppDelegate.swift */,
 				464AD635221BBE2E00274CBA /* ViewController.swift */,
 				464AD637221BBE2F00274CBA /* Main.storyboard */,
@@ -67,12 +71,21 @@
 			path = RadioButtonExample;
 			sourceTree = "<group>";
 		};
-		464AD645221BBF4200274CBA /* MRRadioButton */ = {
+		532FF8C1123FA5EFCC51B682 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				464AD646221BBF4A00274CBA /* MRRadioButton.swift */,
+				12B88616B2429711903F4EAA /* Pods-RadioButtonExample.debug.xcconfig */,
+				9029D2E746F844F7D5B8659D /* Pods-RadioButtonExample.release.xcconfig */,
 			);
-			path = MRRadioButton;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD25B05009D03B2BDC43A9D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFFDA2F72EBCF5A2BD4B107E /* Pods_RadioButtonExample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 464AD642221BBE3500274CBA /* Build configuration list for PBXNativeTarget "RadioButtonExample" */;
 			buildPhases = (
+				D357987C57FE669CBF3FB017 /* [CP] Check Pods Manifest.lock */,
 				464AD62C221BBE2E00274CBA /* Sources */,
 				464AD62D221BBE2E00274CBA /* Frameworks */,
 				464AD62E221BBE2E00274CBA /* Resources */,
+				BCC4D0468595BB57A97B2D90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,13 +156,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BCC4D0468595BB57A97B2D90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RadioButtonExample/Pods-RadioButtonExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MRRadioButton/MRRadioButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRRadioButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadioButtonExample/Pods-RadioButtonExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D357987C57FE669CBF3FB017 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadioButtonExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		464AD62C221BBE2E00274CBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				464AD636221BBE2E00274CBA /* ViewController.swift in Sources */,
-				464AD647221BBF4A00274CBA /* MRRadioButton.swift in Sources */,
 				464AD634221BBE2E00274CBA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,11 +353,13 @@
 		};
 		464AD643221BBE3500274CBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B88616B2429711903F4EAA /* Pods-RadioButtonExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NL38PKJFTM;
 				INFOPLIST_FILE = RadioButtonExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,11 +373,13 @@
 		};
 		464AD644221BBE3500274CBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9029D2E746F844F7D5B8659D /* Pods-RadioButtonExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NL38PKJFTM;
 				INFOPLIST_FILE = RadioButtonExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
