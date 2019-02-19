@@ -1,22 +1,34 @@
 Pod::Spec.new do |s|
-s.name              = 'MRRadioButton'
-s.version           = '0.0.1'
-s.summary           = 'A customisable radio button for iOS'
-s.homepage          = 'https://github.com/mrikh/MRRadioButton'
+
+s.platform = :ios
 s.ios.deployment_target = '10.0'
-s.platform = :ios, '10.0'
-s.swift_version = '4.2'
-s.license           = {
-:type => 'MIT',
-:file => 'LICENSE'
-}
-s.author            = {
-'YOURNAME' => 'Mayank Rikh'
-}
-s.source            = {
-:git => 'https://github.com/mrikh/MRRadioButton.git',
-:tag => "#{s.version}" }
+s.name = "MRRadioButton"
+s.summary = "Customizable radio button in swift"
+s.requires_arc = true
+
+# 2
+s.version = "0.0.2"
+
+# 3
+s.license = { :type => "MIT", :file => "LICENSE" }
+
+# 4 - Replace with your name and e-mail address
+s.author = { "Mayank Rikh" => "mayankrikh@gmail.com" }
+
+# 5 - Replace this URL with your own GitHub page's URL (from the address bar)
+s.homepage = "https://github.com/mrikh/MRRadioButton"
+
+# 6 - Replace this URL with your own Git URL from "Quick Setup"
+s.source = { :git => "https://github.com/mrikh/MRRadioButton.git", 
+             :tag => "#{s.version}" }
+
+# 7
 s.framework = "UIKit"
-s.source_files      = 'Classes/*'
-s.requires_arc      = true
+
+# 8
+s.source_files = "Classes/*.{swift}"
+
+# 10
+s.swift_version = "4.2"
+
 end
